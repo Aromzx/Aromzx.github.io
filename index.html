@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juan Huapaya — Dev Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAVEGACION -->
+<nav>
+  <div class="nav-inner">
+    <a href="#inicio"    class="active">Inicio</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#cv">CV</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#estudios">Estudios</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
+
+<div class="hamburger" id="ham">
+  <span></span><span></span><span></span>
+</div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#inicio"    onclick="closeMobile()">Inicio</a>
+  <a href="#sobre-mi"  onclick="closeMobile()">Sobre mí</a>
+  <a href="#cv"        onclick="closeMobile()">CV</a>
+  <a href="#proyectos" onclick="closeMobile()">Proyectos</a>
+  <a href="#estudios"  onclick="closeMobile()">Estudios</a>
+  <a href="#contacto"  onclick="closeMobile()">Contacto</a>
+</div>
+
+<!-- ── HERO ── -->
+<section id="inicio">
+  <div class="hero-deco"></div>
+  <div class="hero-label">Disponible para trabajar</div>
+  <h1 class="hero-name">Juan<br><em>Huapaya</em></h1>
+  <p class="hero-role">Profesional Técnico en Desarrollo de Software</p>
+  <p class="hero-desc">Técnico titulado en Desarrollo de Software con experiencia en soporte técnico, mantenimiento de sistemas y atención a usuarios. Manejo de herramientas digitales, Excel y plataformas web. Enfocado en brindar soluciones prácticas y aprender continuamente en entornos tecnológicos.
+  </p>
+  <div class="hero-ctas">
+    <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+    <a href="#contacto"  class="btn-outline">Contactarme</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><span class="stat-n">+2</span><span class="stat-l">Proyectos realizados</span></div>
+    <div class="stat"><span class="stat-n">6+</span><span class="stat-l">Meses de experiencia</span></div>
+    <div class="stat"><span class="stat-n">10+</span><span class="stat-l">Tecnologías dominadas</span></div>
+  </div>
+</section>
+
+<!-- ── SOBRE MI ── -->
+<section id="sobre-mi">
+  <div class="sec-label">Sobre mí</div>
+  <h2 class="sec-title">Quién soy</h2>
+  <p class="sec-sub">Un desarrollador apasionado por crear soluciones tecnológicas de calidad, con enfoque en la experiencia del usuario y código limpio.</p>
+  <div class="about-grid reveal">
+    <div class="about-card">
+      <h3>👨‍💻 Perfil</h3>
+      <p>Soy Juan Huapaya, Profesional Técnico en Desarrollo de Software. Me especializo en construir aplicaciones web y de escritorio robustas, poniendo especial atención al detalle y al rendimiento.</p>
+    </div>
+    <div class="about-card">
+      <h3>🎯 Intereses</h3>
+      <p>Me apasionan el desarrollo full-stack, el diseño de interfaces intuitivas, la automatización de procesos y el trabajo en equipo con metodologías ágiles.</p>
+    </div>
+    <div class="about-card">
+      <h3>🛠️ Habilidades técnicas</h3>
+      <div class="skill-tags">
+        <span class="tag">HTML & CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Python</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Git</span>
+        <span class="tag">React</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Java</span>
+      </div>
+    </div>
+    <div class="about-card">
+      <h3>🤝 Soft skills</h3>
+      <div class="skill-tags">
+        <span class="tag">Trabajo en equipo</span>
+        <span class="tag">Comunicación</span>
+        <span class="tag">Resolución de problemas</span>
+        <span class="tag">Proactividad</span>
+        <span class="tag">Aprendizaje rápido</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CV ── -->
+<section id="cv">
+  <div class="sec-label">Curriculum</div>
+  <h2 class="sec-title">Mi trayectoria</h2>
+  <p class="sec-sub">Experiencia y formación que me han moldeado como profesional.</p>
+  <div class="cv-wrap reveal">
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">2023 — Actualidad</div>
+        <div class="tl-title">Desarrollador de Software Junior</div>
+        <div class="tl-place">Empresa Tech · Lima, Perú</div>
+        <div class="tl-desc">Desarrollo y mantenimiento de aplicaciones web internas, integración de APIs REST y colaboración en metodología Scrum.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">2022 — 2023</div>
+        <div class="tl-title">Practicante de Desarrollo</div>
+        <div class="tl-place">Startup Digital · Lima, Perú</div>
+        <div class="tl-desc">Apoyo en desarrollo front-end, pruebas de software y documentación técnica de proyectos.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-period">2020 — 2022</div>
+        <div class="tl-title">Profesional Técnico — Desarrollo de Software</div>
+        <div class="tl-place">Instituto Técnico · Lima, Perú</div>
+        <div class="tl-desc">Formación integral en programación, bases de datos, redes y gestión de proyectos de software.</div>
+      </div>
+    </div>
+    <div class="cv-download-wrap">
+      <p>¿Quieres saber más? Descarga mi CV completo.</p>
+      <a href="#" class="btn-primary" onclick="alert('Aquí irá tu CV en PDF 📄'); return false;">Descargar CV</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROYECTOS ── -->
+<section id="proyectos">
+  <div class="sec-label">Portafolio</div>
+  <h2 class="sec-title">Proyectos destacados</h2>
+  <p class="sec-sub">Algunas de las cosas que he construido.</p>
+  <div class="proj-grid reveal">
+    <div class="proj-card">
+      <div class="proj-thumb" style="background:#EEF6FF;">🛒</div>
+      <div class="proj-body">
+        <div class="proj-title">Sistema de Ventas</div>
+        <div class="proj-desc">Aplicación de escritorio para gestión de ventas, inventario y reportes para pequeñas empresas.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">Tkinter</span>
+          <span class="proj-tag">SQLite</span>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-thumb" style="background:#F0FFF4;">📋</div>
+      <div class="proj-body">
+        <div class="proj-title">App de Tareas</div>
+        <div class="proj-desc">Aplicación web full-stack para gestión de tareas con autenticación de usuarios y notificaciones en tiempo real.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">React</span>
+          <span class="proj-tag">Node.js</span>
+          <span class="proj-tag">MySQL</span>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-thumb" style="background:#FFF7ED;">🌐</div>
+      <div class="proj-body">
+        <div class="proj-title">Landing Page Corporativa</div>
+        <div class="proj-desc">Diseño y desarrollo de sitio web corporativo responsivo con animaciones y formulario de contacto funcional.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">HTML</span>
+          <span class="proj-tag">CSS</span>
+          <span class="proj-tag">JS</span>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-thumb" style="background:#FDF4FF;">📊</div>
+      <div class="proj-body">
+        <div class="proj-title">Dashboard Analítico</div>
+        <div class="proj-desc">Panel de control con visualizaciones de datos, filtros interactivos y exportación de reportes en PDF.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">JavaScript</span>
+          <span class="proj-tag">Chart.js</span>
+          <span class="proj-tag">REST API</span>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-thumb" style="background:#F0F9FF;">📱</div>
+      <div class="proj-body">
+        <div class="proj-title">App Móvil de Gastos</div>
+        <div class="proj-desc">Aplicación para seguimiento de gastos personales con estadísticas mensuales y metas de ahorro.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Java</span>
+          <span class="proj-tag">Android</span>
+          <span class="proj-tag">Firebase</span>
+        </div>
+      </div>
+    </div>
+    <div class="proj-card">
+      <div class="proj-thumb" style="background:#FFF1F2;">🤖</div>
+      <div class="proj-body">
+        <div class="proj-title">Bot de Automatización</div>
+        <div class="proj-desc">Script de automatización para procesamiento masivo de datos y generación de reportes automáticos.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">Selenium</span>
+          <span class="proj-tag">Pandas</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ESTUDIOS ── -->
+<section id="estudios">
+  <div class="sec-label">Formación</div>
+  <h2 class="sec-title">Estudios & Certificados</h2>
+  <p class="sec-sub">Mi formación académica y certificaciones profesionales.</p>
+  <div class="certs-grid reveal">
+    <div class="cert-card">
+      <div class="cert-icon">🎓</div>
+      <div class="cert-info">
+        <div class="cert-name">Profesional Técnico en Desarrollo de Software</div>
+        <div class="cert-inst">Instituto Superior Tecnológico</div>
+        <span class="cert-year">2020 – 2022</span>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">☁️</div>
+      <div class="cert-info">
+        <div class="cert-name">AWS Cloud Practitioner</div>
+        <div class="cert-inst">Amazon Web Services</div>
+        <span class="cert-year">2024</span>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">⚛️</div>
+      <div class="cert-info">
+        <div class="cert-name">React — The Complete Guide</div>
+        <div class="cert-inst">Udemy</div>
+        <span class="cert-year">2023</span>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🐍</div>
+      <div class="cert-info">
+        <div class="cert-name">Python para Data Science</div>
+        <div class="cert-inst">Coursera · IBM</div>
+        <span class="cert-year">2023</span>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🗄️</div>
+      <div class="cert-info">
+        <div class="cert-name">SQL Avanzado & Base de Datos</div>
+        <div class="cert-inst">Oracle Academy</div>
+        <span class="cert-year">2022</span>
+      </div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-icon">🔧</div>
+      <div class="cert-info">
+        <div class="cert-name">Git & GitHub — Control de Versiones</div>
+        <div class="cert-inst">Platzi</div>
+        <span class="cert-year">2022</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACTO ── -->
+<section id="contacto">
+  <div class="sec-label">Contacto</div>
+  <h2 class="sec-title">Hablemos</h2>
+  <p class="sec-sub">¿Tienes un proyecto o una oportunidad? Escríbeme, respondo rápido.</p>
+  <div class="contact-wrap reveal">
+    <div class="contact-info">
+      <a href="mailto:juandiegohuze@hotmail.com" class="contact-item">
+        <div class="contact-ico">📧</div>
+        <div>
+          <span>Correo electrónico</span>
+          <strong>juandiegohuze@hotmail.com</strong>
+        </div>
+      </a>
+      <a href="tel:+51967211883" class="contact-item">
+        <div class="contact-ico">📱</div>
+        <div>
+          <span>Teléfono / WhatsApp</span>
+          <strong>+51 967 211 883</strong>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/juan-diego-arom-huapaya-zevallos-851825279/" target="_blank" class="contact-item">
+        <div class="contact-ico">💼</div>
+        <div>
+          <span>LinkedIn</span>
+          <strong>linkedin.com/in/juandiegoaromhuapayazevallos</strong>
+        </div>
+      </a>
+      <a href="https://github.com/Aromzx" target="_blank" class="contact-item">
+        <div class="contact-ico">🐱</div>
+        <div>
+          <span>GitHub</span>
+          <strong>github.com/Aromzx</strong>
+        </div>
+      </a>
+    </div>
+
+    <form class="contact-form" onsubmit="sendForm(event)">
+      <div class="form-row">
+        <label>Nombre</label>
+        <input type="text" placeholder="Tu nombre" required />
+      </div>
+      <div class="form-row">
+        <label>Correo</label>
+        <input type="email" placeholder="tu@correo.com" required />
+      </div>
+      <div class="form-row">
+        <label>Mensaje</label>
+        <textarea rows="4" placeholder="¿En qué puedo ayudarte?" required></textarea>
+      </div>
+      <button type="submit" class="form-submit">Enviar mensaje ✉️</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>Diseñado & desarrollado por <strong>Juan Huapaya</strong> · 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
