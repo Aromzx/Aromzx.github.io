@@ -61,3 +61,32 @@
     });
   }
   setTimeout(animateCounters, 1000);
+
+// ====== Visor de imágenes ======
+
+const viewer = document.createElement("div");
+viewer.className = "image-viewer";
+
+const viewerImg = document.createElement("img");
+
+viewer.appendChild(viewerImg);
+document.body.appendChild(viewer);
+
+document.querySelectorAll(".zoomable").forEach(img => {
+
+    img.addEventListener("click", () => {
+        viewerImg.src = img.src;
+        viewer.classList.add("show");
+    });
+
+});
+
+viewer.addEventListener("click", () => {
+    viewer.classList.remove("show");
+});
+
+document.addEventListener("keydown", e=>{
+    if(e.key==="Escape"){
+        viewer.classList.remove("show");
+    }
+});
